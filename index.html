@@ -9,12 +9,13 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      background: #f8f0ff;
+      background: #0d0d0d;
+      color: #f5f5f5;
     }
 
     /* MENÚ */
     nav {
-      background: linear-gradient(90deg, #6a0dad, #d63384);
+      background: linear-gradient(90deg, #000000, #d4af37, #ff4da6);
     }
     nav ul {
       list-style: none;
@@ -41,8 +42,8 @@
     nav ul li ul {
       display: none;
       position: absolute;
-      background: #d63384;
-      min-width: 180px;
+      background: #111;
+      min-width: 200px;
     }
     nav ul li:hover ul {
       display: block;
@@ -50,7 +51,7 @@
 
     /* HERO */
     .hero {
-      background: linear-gradient(rgba(106,13,173,0.7), rgba(214,51,132,0.7)),
+      background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8)),
       url('https://via.placeholder.com/1200x400');
       background-size: cover;
       color: white;
@@ -58,10 +59,12 @@
       padding: 100px 20px;
     }
 
-    /* TEXTO ANIMADO */
     .titulo {
-      font-size: 2.5em;
+      font-size: 2.8em;
       font-weight: bold;
+      background: linear-gradient(90deg, #ff4da6, #d4af37);
+      -webkit-background-clip: text;
+      color: transparent;
       animation: aparecer 1.5s ease-out;
     }
 
@@ -78,14 +81,14 @@
     }
 
     h2 {
-      color: #6a0dad;
-      border-left: 6px solid #d63384;
+      color: #d4af37;
+      border-left: 5px solid #ff4da6;
       padding-left: 10px;
     }
 
     p {
-      line-height: 1.6;
-      color: #444;
+      line-height: 1.7;
+      color: #ddd;
     }
 
     /* TARJETAS */
@@ -97,16 +100,16 @@
     }
 
     .card {
-      background: white;
+      background: #1a1a1a;
       padding: 20px;
       border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      border-top: 5px solid #d63384;
+      border-top: 4px solid #d4af37;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.5);
       transition: 0.3s;
     }
 
     .card:hover {
-      transform: translateY(-5px);
+      transform: translateY(-8px);
     }
 
     /* MEDIA */
@@ -121,76 +124,91 @@
     .media img, .media iframe {
       width: 100%;
       max-width: 450px;
-      height: auto;
       border-radius: 15px;
     }
 
     /* FRASE */
     .frase {
-      background: linear-gradient(90deg, #d63384, #6a0dad);
-      color: white;
+      background: linear-gradient(90deg, #ff4da6, #d4af37);
       padding: 20px;
       border-radius: 15px;
       text-align: center;
-      margin: 25px 0;
+      margin: 30px 0;
       font-size: 1.2em;
+      color: black;
       font-weight: bold;
     }
 
     footer {
-      background: #6a0dad;
-      color: white;
+      background: black;
       text-align: center;
       padding: 15px;
+      color: #d4af37;
     }
   </style>
 </head>
 
 <body>
 
-<!-- MENÚ -->
+<!-- MENÚ COMPLETO -->
 <nav>
   <ul>
     <li><a href="index.html">ABANDONO ESCOLAR</a></li>
 
     <li>
+      <a href="causas.html">¿POR QUÉ OCURRE? ▾</a>
+      <ul>
+        <li><a href="#">Problemas económicos</a></li>
+        <li><a href="#">Falta de motivación</a></li>
+        <li><a href="#">Situaciones familiares</a></li>
+        <li><a href="#">Bajo rendimiento académico</a></li>
+      </ul>
+    </li>
+
+    <li>
       <a href="consecuencias.html">CONSECUENCIAS ▾</a>
       <ul>
-        <li><a href="eco.html">Económicas</a></li>
-        <li><a href="soc.html">Sociales</a></li>
-        <li><a href="per.html">Personales</a></li>
+        <li><a href="#">Oportunidades laborales</a></li>
+        <li><a href="#">Impacto económico</a></li>
+        <li><a href="#">Desarrollo personal</a></li>
       </ul>
     </li>
 
     <li>
       <a href="testimonios.html">TESTIMONIOS ▾</a>
       <ul>
-        <li><a href="test1.html">Historia 1</a></li>
-        <li><a href="test2.html">Historia 2</a></li>
+        <li><a href="#">Historias reales</a></li>
+        <li><a href="#">Dificultades</a></li>
+        <li><a href="#">Superación</a></li>
       </ul>
     </li>
 
     <li>
       <a href="prevencion.html">PREVENCIÓN ▾</a>
       <ul>
-        <li><a href="estrategias.html">Estrategias</a></li>
-        <li><a href="apoyo.html">Apoyo escolar</a></li>
+        <li><a href="#">Organización del tiempo</a></li>
+        <li><a href="#">Apoyo docente</a></li>
+        <li><a href="#">Metas claras</a></li>
+        <li><a href="#">Estrategias de estudio</a></li>
       </ul>
     </li>
 
     <li>
       <a href="familia.html">FAMILIA-ESCUELA ▾</a>
       <ul>
-        <li><a href="rol.html">Rol familiar</a></li>
-        <li><a href="comunicacion.html">Comunicación</a></li>
+        <li><a href="#">Apoyo emocional</a></li>
+        <li><a href="#">Comunicación</a></li>
+        <li><a href="#">Seguimiento académico</a></li>
       </ul>
     </li>
 
     <li>
       <a href="recursos.html">RECURSOS Y APOYOS ▾</a>
       <ul>
-        <li><a href="becas.html">Becas</a></li>
-        <li><a href="programas.html">Programas</a></li>
+        <li><a href="#">Tutorías</a></li>
+        <li><a href="#">Apoyo psicológico</a></li>
+        <li><a href="#">Becas</a></li>
+        <li><a href="#">Contactos escolares</a></li>
       </ul>
     </li>
 
@@ -200,8 +218,8 @@
 
 <!-- PORTADA -->
 <div class="hero">
-  <h1 class="titulo">El abandono escolar se puede prevenir</h1>
-  <p>Infórmate, reflexiona y actúa</p>
+  <h1 class="titulo">El abandono escolar sí tiene solución</h1>
+  <p>Informarse es el primer paso para cambiar el futuro</p>
 </div>
 
 <!-- CONTENIDO -->
@@ -210,36 +228,36 @@
 <h2>¿Qué es el abandono escolar?</h2>
 <p>
 El abandono escolar ocurre cuando un estudiante deja sus estudios antes de terminarlos.
-Este problema afecta su futuro, limita sus oportunidades y también impacta a la sociedad.
-Comprenderlo es clave para prevenirlo.
+Es una problemática que afecta su futuro, limita oportunidades laborales y repercute en la sociedad.
+Comprender sus causas es clave para prevenirlo.
 </p>
 
 <div class="frase">
-"La educación es la mejor herramienta para construir un mejor futuro"
+"La educación es la llave que abre todas las puertas del futuro"
 </div>
 
-<h2>¿Por qué ocurre el abandono escolar?</h2>
+<h2>¿Por qué ocurre?</h2>
 
 <div class="cards">
   <div class="card"><h3>💰 Problemas económicos</h3><p>Muchos estudiantes deben trabajar para apoyar a su familia.</p></div>
-  <div class="card"><h3>😔 Falta de motivación</h3><p>No encuentran interés o sentido en continuar estudiando.</p></div>
-  <div class="card"><h3>👨‍👩‍👧 Situaciones familiares</h3><p>Conflictos o falta de apoyo influyen directamente.</p></div>
-  <div class="card"><h3>📉 Bajo rendimiento académico</h3><p>Las dificultades escolares generan frustración.</p></div>
+  <div class="card"><h3>😔 Falta de motivación</h3><p>Pérdida de interés en continuar estudiando.</p></div>
+  <div class="card"><h3>👨‍👩‍👧 Situaciones familiares</h3><p>Falta de apoyo o conflictos en casa.</p></div>
+  <div class="card"><h3>📉 Bajo rendimiento</h3><p>Dificultades académicas que generan frustración.</p></div>
 </div>
 
-<h2>Consecuencias de no terminar los estudios</h2>
+<h2>Consecuencias</h2>
 
 <div class="cards">
-  <div class="card"><h3>💼 Menores oportunidades laborales</h3><p>Acceso limitado a empleos bien pagados.</p></div>
-  <div class="card"><h3>💸 Inestabilidad económica</h3><p>Ingresos bajos y pocas oportunidades.</p></div>
-  <div class="card"><h3>🚧 Limitaciones personales</h3><p>Menor desarrollo profesional y personal.</p></div>
+  <div class="card"><h3>💼 Menores oportunidades laborales</h3></div>
+  <div class="card"><h3>💸 Inestabilidad económica</h3></div>
+  <div class="card"><h3>🚧 Limitaciones personales</h3></div>
 </div>
 
 <h2>Reflexiona</h2>
 
 <div class="media">
   <img src="imagen.jpg">
-  <iframe src="https://www.youtube.com/embed/1fueZCTYkpA"></iframe>
+  <iframe height="250" src="https://www.youtube.com/embed/1fueZCTYkpA"></iframe>
 </div>
 
 </div>
